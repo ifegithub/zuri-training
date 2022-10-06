@@ -1,0 +1,54 @@
+body::before{
+    display: block;
+    content: "";
+    height: 50px;
+}
+
+body{
+	-webkit-animation-name: fade-in;
+	animation-name: fade-in;
+	-webkit-animation-duration: 2s;
+	animation-duration: 2s;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@-webkit-keyframes fade-in {
+	from{opacity: 0;}
+	
+	to{opacity: 1;}
+}
+@keyframes fade-in {
+	from{opacity: 0;}
+
+	to{opacity: 1;}
+}
+
+#cont-5{  
+	border: 5px double rgb(17, 70, 83);
+	padding: 0;
+}
+.bjrow-3{
+	/* border: 1px solid blue; */
+	display: flex;
+	padding: 10px;
+	flex-wrap: wrap;
+	flex: row;
+	justify-content: space-around;
+}
+
+table{
+	padding:10px;
+	border: 1px solid #000
+}
+th{
+	padding: 10px;
+	border: 1px solid #000
+}
+td{
+	padding: 0px;
+	border: 1px solid #000
+}
+.total-scores{
+	-moz-column-span: 2;
+	     column-span: 2;
+}
